@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background: url(https://images.pexels.com/photos/3945320/pexels-photo-3945320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: fixed;
+}
+.top_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-left: 80px;
+    background: rgba(0, 0, 0, 0.699);
+    border-bottom: 5px white outset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+}
+.top_block > img{
+    width: 250px;
+    height: 100px;
+    border: none;
+}
+.nav{
+   width: 100%;
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav ul li{
+    list-style: none;
+    padding: 10px 50px;
+    color: white;
+    font-size: 25px;
+    border-bottom: 2px inset transparent;
+}
+.nav ul li:hover{
+    color: #ffb400;
+    cursor: pointer;
+    border-color:white;
+}
+input{
+    border: 3px solid white;
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+.fa-search{
+    position: absolute;
+    font-size: 30px;
+    right: 120px;
+}
+.container{
+    width: 1200px;
+    margin: 120px auto;
+    padding: 20px 10px;
+    background: rgba(255, 255, 255, 0.637);
+    border: 10px outset white;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+.block{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+img{
+    width: 100%;
+    height: 512px;
+    border: 5px white outset;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.images {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 390px;
+    height: 600px;
+    position: relative;
+    z-index:10;
+    transform-origin: bottom center;
+    transition: 0.4s linear;
+    margin-top: 10px;
+}
+.images h1{
+    position: absolute;
+    bottom: 90px;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.images:hover h1{
+    bottom: 20px;
+    transition: 0.3s linear;
+}
+.images > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:10;
+    transition: 0.4s linear;
+}
+
+
+.images:nth-of-type(1):hover .img1 {
+    transform: translateX(400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(1):hover .img2 {
+    transform: translateX(800px);
+    transition: 0.4s linear;
+}
+.images:hover{
+    z-index: 100;
+}
+
+.images:hover .img1{
+    transform: translateX(-400px);
+     transition: 0.4s linear;
+    
+}
+.images:hover .img2{
+    transform: translateX(400px);
+     transition: 0.4s linear;
+
+}
+.images:nth-of-type(3):hover .img1 {
+    transform: translateX(-400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(3):hover .img2 {
+    transform: translateX(-800px);
+    transition: 0.4s linear;
+}
+
+.images:nth-of-type(4):hover .img1 {
+    transform: translateX(400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(4):hover .img2 {
+    transform: translateX(800px);
+    transition: 0.4s linear;
+}
+
+.images:nth-of-type(6):hover .img1 {
+    transform: translateX(-400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(6):hover .img2 {
+    transform: translateX(-800px);
+    transition: 0.4s linear;
+}
+
+.images:nth-of-type(7):hover .img1 {
+    transform: translateX(400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(7):hover .img2 {
+    transform: translateX(800px);
+    transition: 0.4s linear;
+}
+
+.images:nth-of-type(9):hover .img1 {
+    transform: translateX(-400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(9):hover .img2 {
+    transform: translateX(-800px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(10):hover .img1 {
+    transform: translateX(400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(10):hover .img2 {
+    transform: translateX(800px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(12):hover .img1 {
+    transform: translateX(-400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(12):hover .img2 {
+    transform: translateX(-800px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(13):hover .img1 {
+    transform: translateX(400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(13):hover .img2 {
+    transform: translateX(800px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(15):hover .img1 {
+    transform: translateX(-400px);
+    transition: 0.4s linear;
+}
+.images:nth-of-type(15):hover .img2 {
+    transform: translateX(-800px);
+    transition: 0.4s linear;
+}
